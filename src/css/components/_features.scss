@@ -1,4 +1,199 @@
-.features{
-    height: 500px;
-    background: #383838;
+.features {
+    background: $textColor;
+
+    .features-header {
+        margin-top: 77px;
+        text-align: center;
+
+        h2 {
+            font-size: 26px;
+            font-weight: 700;
+            color: $textWhite;
+            letter-spacing: 0.13em;
+            position: relative;
+
+            span {
+                color: $mainColor;
+            }
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 26%;
+            top: calc(50% - 7px);
+            height: 15px;
+            width: 15px;
+            border-radius: 2px;
+            background: $mainColor;
+            transform: rotate(45deg);
+        }
+
+        h2::before {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 26%;
+            top: calc(50% - 7px);
+            height: 15px;
+            width: 15px;
+            border-radius: 2px;
+            background: $mainColor;
+            transform: rotate(45deg);
+        }
+
+        h2 span::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 25%;
+            opacity: 0.5;
+            top: calc(50% - 7px);
+            height: 15px;
+            width: 15px;
+            border-radius: 2px;
+            background: $mainColor;
+            transform: rotate(45deg);
+        }
+
+        h2 span::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 25%;
+            opacity: 0.5;
+            top: calc(50% - 7px);
+            height: 15px;
+            width: 15px;
+            border-radius: 2px;
+            background: $mainColor;
+            transform: rotate(45deg);
+        }
+
+        p {
+            color: $textWhite;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 70px;
+            opacity: 0.8;
+        }
+    }
+
+    .features-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 50px;
+
+        .item {
+            position: relative;
+            margin-bottom: 60px;
+
+            h3 {
+                color: $textWhite;
+                font-size: 15px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 14px;
+                color: $textWhite;
+                text-align: center;
+                width: 260px;
+                margin-left: 50px;
+                opacity: 0.8;
+            }
+
+            i {
+                position: absolute;
+                top: calc(50% - 10px);
+                left: 15px;
+                color: $mainColor;
+                font-size: 27px;
+            }
+        }
+    }
+
+    img {
+        height: 430px;
+    }
+}
+
+.about-us {
+    padding-bottom: 60px;
+    .about-us-item {
+        width: 370px;
+        position: relative;
+        height: 125px;
+        margin-top: 75px;
+        padding-left: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h3 {
+            font-size: 14px;
+            color: $textColor;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        span {
+            color: #8a8a8a;
+            opacity: 0.8;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $textColor;
+            font-size: 14px;
+        }
+
+        i {
+            position: absolute;
+            font-size: 17px;
+            color: $textWhite;
+            left: 0;
+            top: 25px;
+            z-index: 300;
+            height: 35px;
+            width: 40px;
+            background: #404040;
+            display: block;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 3px;
+            transition: all .6s;
+        }
+
+        i::after {
+            content: '';
+            position: relative;
+            bottom: -42px;
+            left: -19px;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid #404040;
+            transition: all .6s;
+            
+        }
+        i::before{
+            position: relative;
+            left: 11px;
+        }
+
+
+    }
+    .about-us-item:hover i{
+        background: $mainColor;
+    }
+    .about-us-item:hover i::after{
+        border-top: 20px solid $mainColor;
+    }
 }
