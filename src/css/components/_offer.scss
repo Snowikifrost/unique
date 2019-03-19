@@ -1,0 +1,186 @@
+nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+    .navigation {
+        li {
+            list-style: none;
+            display: inline-block;
+
+            a {
+                color: $textColor;
+                font-weight: bold;
+                padding: 15px;
+                font-size: 15px;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background: $mainColor;
+                border-radius: 5px;
+                color: $textWhite;
+            }
+        }
+
+    }
+
+    .logo {
+        color: $textColor;
+        cursor: pointer;
+        transition: all .75s;
+    }
+    .logo:hover{
+        color: #344154;
+    }
+}
+nav.fixed{
+    position: fixed;
+    top:0;
+}
+.offers{
+    padding-top: 180px;
+    padding-bottom: 100px;
+    position: relative;
+    .offers-header{
+        h2{
+            font-size: 26px;
+            text-align: center;
+            color: $textColor;
+            font-weight: 800;
+            letter-spacing: 1px;
+            position: relative;
+            span{
+                color:$mainColor;
+            }
+        }
+        h2::after{
+            content:"";
+            display: block;
+            position: absolute;
+            left: 26%;
+            top: calc(50% - 7px);
+            height: 15px;
+            width: 15px;
+            border-radius: 2px;
+            background: $mainColor;
+            transform: rotate(45deg);
+        }
+        h2::before{
+            content:"";
+            display: block;
+            position: absolute;
+            right: 26%;
+            top: calc(50% - 7px);
+            height: 15px;
+            width: 15px;
+            border-radius: 2px;
+            background: $mainColor;
+            transform: rotate(45deg);
+        }
+        h2 span::after{
+            content:"";
+            display: block;
+            position: absolute;
+            right: 25%;
+            opacity: 0.5;
+            top: calc(50% - 7px);
+            height: 15px;
+            width: 15px;
+            border-radius: 2px;
+            background: $mainColor;
+            transform: rotate(45deg);
+        }
+        h2 span::before{
+            content:"";
+            display: block;
+            position: absolute;
+            left:25%;
+            opacity: 0.5;
+            top: calc(50% - 7px);
+            height: 15px;
+            width: 15px;
+            border-radius: 2px;
+            background: $mainColor;
+            transform: rotate(45deg);
+        }
+        p{
+            font-size: 16px;
+            text-align: center;
+            color: #8a8a8a;
+        }
+        margin-bottom: 50px;
+    }
+    .services{
+
+        .services-item{
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            i{
+                font-size: 45px;
+                height: 100px;
+                width: 100px;
+                line-height: 100px;
+                text-align: center;
+                background: $textColor;
+                border-radius: 100%;
+                color:#eee;
+                transition: all .5s ease;
+            }
+            h3{
+                color:$textColor;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            p{
+                text-align: center;
+                color:#7a7a7a;
+                font-size: 14px;
+            }
+            a{
+                text-decoration: none;
+                color:#7a7a7a;
+                border: 1px solid $textWhite;
+                font-size: 10px;
+                font-weight: bold;
+                padding: 10px 15px;
+                border-radius: 3px;
+                transition: all .5s ease;
+            }
+        }
+        
+        .services-item:hover a{
+            background: $mainColor;
+            color: $textWhite;
+        }
+        .services-item:hover i{
+            background: $mainColor;
+            color:$textWhite;
+        }
+    }
+}
+.key{
+    height: 55px;
+    width: 55px;
+    display: block;
+    position: absolute;
+    bottom: -28px;
+    left: calc(50% - 27px);
+    border-radius: 5px;
+    background: $mainColor;
+    text-align: center;
+    transform: rotate(45deg);
+    i{
+        color:$textWhite;
+        font-size: 25px;
+        transform: rotate(315deg);
+        line-height: 55px;
+    }
+}

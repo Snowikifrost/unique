@@ -3,6 +3,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+*::selection {
+  background: #00adb5;
+}
+
 header {
   height: 750px;
   background: url(../img/bgfirst.jpg);
@@ -38,19 +42,11 @@ header {
   line-height: 40px;
   text-align: center;
 }
-.header-block .black-frame .logo {
-  font-weight: 700;
-  color: #eeeeee;
-  font-size: 20px;
-}
-.header-block .black-frame .logo .logo-first-latter {
-  color: #00adb5;
-  font-size: 20px;
-}
 .header-block p {
   color: #222831;
   font-weight: bold;
   font-size: 25px;
+  text-shadow: 0 0 1px #eeeeee;
 }
 .header-block p span {
   color: #00adb5;
@@ -64,9 +60,210 @@ header {
   height: 60px;
   width: 60px;
   text-align: center;
+  transition: all 0.6s;
 }
 .header-block a i {
   color: #00adb5;
+}
+.header-block a:hover {
+  border: 2px solid #00f4ff;
+}
+.header-block a:hover i {
+  color: #00f4ff;
+}
+
+.logo {
+  font-weight: 700;
+  color: #eeeeee;
+  font-size: 20px;
+}
+.logo .logo-first-latter {
+  color: #00adb5;
+  font-size: 20px;
+}
+
+nav {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+}
+nav .navigation li {
+  list-style: none;
+  display: inline-block;
+}
+nav .navigation li a {
+  color: #222831;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 15px;
+  text-decoration: none;
+}
+nav .navigation li a:hover {
+  background: #00adb5;
+  border-radius: 5px;
+  color: #eeeeee;
+}
+nav .logo {
+  color: #222831;
+  cursor: pointer;
+  transition: all 0.75s;
+}
+nav .logo:hover {
+  color: #344154;
+}
+
+nav.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.offers {
+  padding-top: 180px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.offers .offers-header {
+  margin-bottom: 50px;
+}
+.offers .offers-header h2 {
+  font-size: 26px;
+  text-align: center;
+  color: #222831;
+  font-weight: 800;
+  letter-spacing: 1px;
+  position: relative;
+}
+.offers .offers-header h2 span {
+  color: #00adb5;
+}
+.offers .offers-header h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 26%;
+  top: calc(50% - 7px);
+  height: 15px;
+  width: 15px;
+  border-radius: 2px;
+  background: #00adb5;
+  transform: rotate(45deg);
+}
+.offers .offers-header h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 26%;
+  top: calc(50% - 7px);
+  height: 15px;
+  width: 15px;
+  border-radius: 2px;
+  background: #00adb5;
+  transform: rotate(45deg);
+}
+.offers .offers-header h2 span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 25%;
+  opacity: 0.5;
+  top: calc(50% - 7px);
+  height: 15px;
+  width: 15px;
+  border-radius: 2px;
+  background: #00adb5;
+  transform: rotate(45deg);
+}
+.offers .offers-header h2 span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 25%;
+  opacity: 0.5;
+  top: calc(50% - 7px);
+  height: 15px;
+  width: 15px;
+  border-radius: 2px;
+  background: #00adb5;
+  transform: rotate(45deg);
+}
+.offers .offers-header p {
+  font-size: 16px;
+  text-align: center;
+  color: #8a8a8a;
+}
+.offers .services .services-item {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.offers .services .services-item i {
+  font-size: 45px;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  background: #222831;
+  border-radius: 100%;
+  color: #eee;
+  transition: all 0.5s ease;
+}
+.offers .services .services-item h3 {
+  color: #222831;
+  font-size: 20px;
+  font-weight: bold;
+}
+.offers .services .services-item p {
+  text-align: center;
+  color: #7a7a7a;
+  font-size: 14px;
+}
+.offers .services .services-item a {
+  text-decoration: none;
+  color: #7a7a7a;
+  border: 1px solid #eeeeee;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+}
+.offers .services .services-item:hover a {
+  background: #00adb5;
+  color: #eeeeee;
+}
+.offers .services .services-item:hover i {
+  background: #00adb5;
+  color: #eeeeee;
+}
+
+.key {
+  height: 55px;
+  width: 55px;
+  display: block;
+  position: absolute;
+  bottom: -28px;
+  left: calc(50% - 27px);
+  border-radius: 5px;
+  background: #00adb5;
+  text-align: center;
+  transform: rotate(45deg);
+}
+.key i {
+  color: #eeeeee;
+  font-size: 25px;
+  transform: rotate(315deg);
+  line-height: 55px;
+}
+
+.features {
+  height: 500px;
+  background: #383838;
 }
 
 /*# sourceMappingURL=main.css.map */

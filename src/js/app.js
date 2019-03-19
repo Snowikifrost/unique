@@ -1,23 +1,18 @@
-class Greetings {
-    constructor() {
-        this.firstName = 'egor';
-        this.lastName = 'inlisnki';
-        Object.defineProperties(this, {
-            sayHi: {
-                get: function () {
-                    return Greetings.Name() + " " + this.lastName;
-                },
-                set: function (NewName, NewLastname) {
-                    return NewName + " " + NewLastname;
-                }
-            }
-        });
-    }
-    static Name() {
-        return "egorrr"
-    }
-}
+(function($){
+    $(document).ready(function(){
 
-var me = new Greetings();
-console.log(me.firstName, me.lastName)
-console.log(me.sayHi);
+//Липкое меню
+        $(document).on('scroll resize',function(){
+            let scrollig = $(document).scrollTop();
+            
+            if(scrollig >= 750){
+                $('nav').addClass('fixed');
+            } else {
+                $('nav').removeClass('fixed');
+            }
+        })
+
+
+
+    });
+})(jQuery);
