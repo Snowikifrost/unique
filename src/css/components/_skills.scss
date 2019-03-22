@@ -1,0 +1,324 @@
+.skills {
+  background: $textColor;
+
+  .skills-title {
+    margin-top: 75px;
+    margin-bottom: 45px;
+    text-align: center;
+
+    h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #eeeeee;
+      letter-spacing: 0.13em;
+      position: relative;
+
+      span {
+        color: #00adb5;
+      }
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 20%;
+      top: calc(50% - 7px);
+      height: 15px;
+      width: 15px;
+      border-radius: 2px;
+      background: $mainColor;
+      transform: rotate(45deg);
+    }
+
+    h2::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 20%;
+      top: calc(50% - 7px);
+      height: 15px;
+      width: 15px;
+      border-radius: 2px;
+      background: $mainColor;
+      transform: rotate(45deg);
+    }
+
+    h2 span::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 19%;
+      opacity: 0.5;
+      top: calc(50% - 7px);
+      height: 15px;
+      width: 15px;
+      border-radius: 2px;
+      background: $mainColor;
+      transform: rotate(45deg);
+    }
+
+    h2 span::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 19%;
+      opacity: 0.5;
+      top: calc(50% - 7px);
+      height: 15px;
+      width: 15px;
+      border-radius: 2px;
+      background: $mainColor;
+      transform: rotate(45deg);
+    }
+
+    p {
+      font-size: 15px;
+      color: $textWhite;
+      opacity: 0.8;
+    }
+  }
+}
+
+/* ПРОГРЕСС БАРЫ */
+$diameter: 125px;
+$accent: $mainColor;
+$gray: $textWhite;
+$progress:270; // Угол
+$border: 5px;
+
+.progress {
+  position: relative;
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+  background-color: $accent;
+
+  span {
+    position: absolute;
+    top: 29%;
+    left: 32%;
+    color: $textWhite;
+    font-size: 30px;
+    z-index: 300;
+    font-weight: 700;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+
+    @if $progress>180 {
+      background-color: $accent;
+    }
+
+    @if $progress <=180 {
+      background-color: $gray;
+    }
+
+    width: $diameter;
+    height: $diameter;
+    border-radius: 50%;
+    clip: rect(0, #{$diameter/2}, $diameter, 0);
+    transform-origin: 50% 50%;
+
+    @if $progress <=180 {
+      transform: rotate(#{180 + $progress}deg);
+    }
+
+    @if $progress>180 {
+      transform: rotate(#{180 + $progress - 180}deg);
+    }
+
+    z-index: 1;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    background-color: $gray;
+    width: $diameter;
+    height: $diameter;
+    border-radius: 50%;
+    clip: rect(0, #{$diameter/2}, $diameter, 0);
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+  }
+
+  .center {
+    position: absolute;
+    top: $border;
+    left: $border;
+    width: #{$diameter - 2 * $border};
+    height: #{$diameter - 2 * $border};
+    background-color: $textColor;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+}
+
+.sub-name {
+  color: $textWhite;
+  font-size: 14px;
+  opacity: 0.8;
+  text-align: left;
+  padding: 20px 10px 70px 0;
+}
+
+.works {
+  position: relative;
+
+  .works-header {
+    padding-top: 80px;
+
+    h2 {
+      font-size: 26px;
+      text-align: center;
+      color: $textColor;
+      font-weight: 800;
+      letter-spacing: 1px;
+      position: relative;
+
+      span {
+        color: $mainColor;
+      }
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 26%;
+      top: calc(50% - 7px);
+      height: 15px;
+      width: 15px;
+      border-radius: 2px;
+      background: $mainColor;
+      transform: rotate(45deg);
+    }
+
+    h2::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 26%;
+      top: calc(50% - 7px);
+      height: 15px;
+      width: 15px;
+      border-radius: 2px;
+      background: $mainColor;
+      transform: rotate(45deg);
+    }
+
+    h2 span::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 25%;
+      opacity: 0.5;
+      top: calc(50% - 7px);
+      height: 15px;
+      width: 15px;
+      border-radius: 2px;
+      background: $mainColor;
+      transform: rotate(45deg);
+    }
+
+    h2 span::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 25%;
+      opacity: 0.5;
+      top: calc(50% - 7px);
+      height: 15px;
+      width: 15px;
+      border-radius: 2px;
+      background: $mainColor;
+      transform: rotate(45deg);
+    }
+
+    p {
+      font-size: 16px;
+      text-align: center;
+      color: #8a8a8a;
+    }
+    margin-bottom: 50px;
+  }
+}
+.works-samples-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 110px;
+  .one-works-container{
+    height: 250px;
+    width: 310px;
+    position: relative;
+    margin:1px;
+    .work-bg{
+      width: 310px;
+      height: 250px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #ccc;
+    }
+    .title-hover{
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 310px;
+      height: 250px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      transition: all .6s;
+      background: $mainColor;
+      span{
+        color:$textWhite;
+        font-weight: 700;
+        font-size: 20px; 
+      }
+      .buttons{
+        margin-bottom: 2em;
+        text-align: center;
+
+        i{
+          font-size: 20px;
+          color: $textWhite;
+          line-height: 40px;
+          background: $textColor;
+          width: 40px;
+          height: 40px;
+          transform: rotate(45deg);
+          border-radius: 3px;
+          padding-left: -10px;  
+          position: relative;
+          transition: all .3s;
+
+        }
+        i:nth-child(1){
+          left: 3px;
+        }
+        i:nth-child(2){
+          left: -3px;
+        }
+        i:hover{
+          background: $textWhite;
+          color: $mainColor;
+          z-index: 5;
+        }
+      }
+    }
+    
+  }
+}
+.one-works-container:hover .title-hover{
+  opacity: 0.9;
+}
