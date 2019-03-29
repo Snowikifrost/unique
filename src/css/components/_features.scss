@@ -125,6 +125,7 @@
 .about-us {
     padding-bottom: 60px;
     position: relative;
+
     .about-us-item {
         width: 370px;
         position: relative;
@@ -154,51 +155,56 @@
             font-size: 14px;
         }
 
-        i {
-            position: absolute;
-            font-size: 17px;
-            color: $textWhite;
-            left: 0;
-            top: 25px;
-            z-index: 300;
-            height: 35px;
+        .about-us-icon {
             width: 40px;
-            background: #404040;
+            min-height: 40px;
+            border-radius: 5px;
+            background: #222831;
+            position: relative;
             display: block;
-            line-height: 40px;
+            left: -60px;
+            top: -121px;
             text-align: center;
-            border-radius: 3px;
-            transition: all .6s;
+            line-height: 57px;
+            transition: all 0.6s;
+
+            i {
+                color: $textWhite;
+                font-size: 25px
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -17px;
+                left: 0px;
+                width: 0;
+                height: 0;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid #222831;
+                transition: all 0.6s;
+            }
         }
 
-        i::after {
-            content: '';
-            position: relative;
-            bottom: -32px;
-            left: -19px;
-            width: 0;
-            height: 0;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            border-top: 10px solid #404040;
-            transition: all .6s;
-            
-        }
-        i::before{
-            position: relative;
-            left: 11px;
-        }
+
+
+
+
 
 
     }
-    .about-us-item:hover i{
+
+    .about-us-item:hover .about-us-icon {
         background: $mainColor;
     }
-    .about-us-item:hover i::after{
-        border-top: 10px solid $mainColor;
+
+    .about-us-item:hover .about-us-icon::after {
+        border-top: 20px solid $mainColor;
     }
 }
-.skill-logo{
+
+.skill-logo {
     height: 55px;
     width: 55px;
     display: block;
@@ -209,8 +215,9 @@
     background: $mainColor;
     text-align: center;
     transform: rotate(45deg);
-    i{
-        color:$textWhite;
+
+    i {
+        color: $textWhite;
         font-size: 25px;
         transform: rotate(315deg);
         line-height: 55px;

@@ -12,6 +12,10 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Стили овл -->
+    <link rel="stylesheet" href="src/css/owl.carousel.min.css">
+    <!-- Стили Chartist -->
+    <link rel="stylesheet" href="src/css/chartist.css">
     <!-- Свои стили -->
     <link rel="stylesheet" href="src/css/main.css">
     <!-- Скрипты jQuery -->
@@ -23,8 +27,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <!-- Скрипты Rellax -->
+    <script src="src/js/rellax.js"></script>
+    <!-- Скрипты Chartist -->
+    <script src="src/js/chartist.min.js"></script>
+    <!-- Скрипты овл -->
+    <script src="src/js/owl.carousel.min.js"></script>
     <!-- Скрипт свой -->
     <script src="src/js/app.js"></script>
+    <!-- Апи Яндекс.Карт -->
+    <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=jQuery.fn.MapsInit" type="text/javascript">
+    </script>
 
 </head>
 
@@ -143,7 +156,15 @@
                         <h3>RESPONSIVE & PURPOSE</h3>
                         <span>Desktop, tablets & phones</span>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, quod!</p>
-                        <i class="fas fa-desktop"></i>
+                        <span class="about-us-icon"><i class="fas fa-desktop"></i></span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="about-us-item">
+                        <h3>RESPONSIVE111 & PURPOSE</h3>
+                        <span>Desktop, tablets & phones</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, quod!</p>
+                        <span class="about-us-icon"><i class="fas fa-desktop"></i></span>
                     </div>
                 </div>
                 <div class="col-4">
@@ -151,15 +172,7 @@
                         <h3>RESPONSIVE & PURPOSE</h3>
                         <span>Desktop, tablets & phones</span>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, quod!</p>
-                        <i class="fas fa-desktop"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="about-us-item">
-                        <h3>RESPONSIVE & PURPOSE</h3>
-                        <span>Desktop, tablets & phones</span>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, quod!</p>
-                        <i class="fas fa-desktop"></i>
+                        <span class="about-us-icon"><i class="fas fa-desktop"></i></span>
                     </div>
                 </div>
 
@@ -170,7 +183,7 @@
                         <h3>RESPONSIVE & PURPOSE</h3>
                         <span>Desktop, tablets & phones</span>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, quod!</p>
-                        <i class="fas fa-desktop"></i>
+                        <span class="about-us-icon"><i class="fas fa-desktop"></i></span>
                     </div>
                 </div>
                 <div class="col-4">
@@ -178,7 +191,7 @@
                         <h3>RESPONSIVE & PURPOSE</h3>
                         <span>Desktop, tablets & phones</span>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, quod!</p>
-                        <i class="fas fa-desktop"></i>
+                        <span class="about-us-icon"><i class="fas fa-desktop"></i></span>
                     </div>
                 </div>
                 <div class="col-4">
@@ -186,7 +199,7 @@
                         <h3>RESPONSIVE & PURPOSE</h3>
                         <span>Desktop, tablets & phones</span>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, quod!</p>
-                        <i class="fas fa-desktop"></i>
+                        <span class="about-us-icon"><i class="fas fa-desktop"></i></span>
                     </div>
                 </div>
             </div>
@@ -207,40 +220,22 @@
             <div class="row">
                 <!--Круглые прогрессы -->
                 <div class="col-2">
-                    <div class="progress" data-prc="a">
-                        <div class="center" data-prc="a"></div>
-                        <span>75%</span>
-                    </div>
+                    <div class="ch-rts1"></div>
                 </div>
                 <div class="col-2">
-                    <div class="progress" data-prc="b">
-                        <div class="center" data-prc="b"></div>
-                        <span>75%</span>
-                    </div>
+                    <div class="ch-rts2"></div>
                 </div>
                 <div class="col-2">
-                    <div class="progress">
-                        <div class="center"></div>
-                        <span>75%</span>
-                    </div>
+                    <div class="ch-rts3"></div>
                 </div>
                 <div class="col-2">
-                    <div class="progress">
-                        <div class="center"></div>
-                        <span>75%</span>
-                    </div>
+                    <div class="ch-rts4"></div>
                 </div>
                 <div class="col-2">
-                    <div class="progress">
-                        <div class="center"></div>
-                        <span>75%</span>
-                    </div>
+                    <div class="ch-rts5"></div>
                 </div>
                 <div class="col-2">
-                    <div class="progress">
-                        <div class="center"></div>
-                        <span>75%</span>
-                    </div>
+                    <div class="ch-rts6"></div>
                 </div>
             </div>
             <div class="row">
@@ -569,8 +564,189 @@
                 </div>
             </div>
         </div>
-        <div class="quote-key"><i class="fa fa-quote-left" aria-hidden="true"></i></div>   
+        <div class="quote-key"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
     </section>
+    <section id="quotes">
+        <div class="quotes-section">
+            <div class="container">
+                <div class="owl-carousel owl-carousel-container">
+                    <div class="owl-carousel-item">
+                        <h4><span>ALEX SIMPSON</span> - CEO & Developer</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et eius cumque minus dolorem
+                            numquam mollitia excepturi, magnam molestiae. Cupiditate, laborum!</p>
+                    </div>
+                    <div class="owl-carousel-item">
+                        <h4><span>ALEX SIMPSON</span> - CEO & Developer</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et eius cumque minus dolorem
+                            numquam mollitia excepturi, magnam molestiae. Cupiditate, laborum!</p>
+                    </div>
+                    <div class="owl-carousel-item">
+                        <h4><span>ALEX SIMPSON</span> - CEO & Developer</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et eius cumque minus dolorem
+                            numquam mollitia excepturi, magnam molestiae. Cupiditate, laborum!</p>
+                    </div>
+                    <div class="owl-carousel-item">
+                        <h4><span>ALEX SIMPSON</span> - CEO & Developer</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et eius cumque minus dolorem
+                            numquam mollitia excepturi, magnam molestiae. Cupiditate, laborum!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logos-section">
+            <div class="container">
+                <div class="owl-carousel owl-carousel-logos">
+                    <div class="owl-logo-items">
+                        <img src="src/img/logos/1.png" alt="">
+                    </div>
+                    <div class="owl-logo-items">
+                        <img src="src/img/logos/2.png" alt="">
+                    </div>
+                    <div class="owl-logo-items">
+                        <img src="src/img/logos/3.png" alt="">
+                    </div>
+                    <div class="owl-logo-items">
+                        <img src="src/img/logos/4.png" alt="">
+                    </div>
+                    <div class="owl-logo-items">
+                        <img src="src/img/logos/5.png" alt="">
+                    </div>
+                    <div class="owl-logo-items">
+                        <img src="src/img/logos/6.png" alt="">
+                    </div>
+                    <div class="owl-logo-items">
+                        <img src="src/img/logos/7.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="prices">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-7">
+                        <div class="prices-header">
+                            <h2>REAL CHEAP <span>PRICES</span></h2>
+                            <p>We offer all our services in real low prices in comparison with similar companies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="prices-card">
+                            <h4>STANDART PLAN</h4>
+                            <p>$ <span>19.99</span> monthly</p>
+                            <ul>
+                                <li>5 projects</li>
+                                <li>5 gb storage</li>
+                                <li>unlimited users</li>
+                                <li>10 gb bandwidth</li>
+                                <li>enchanded security</li>
+                            </ul>
+                            <button>SIGN UP NOW</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="prices-card">
+                            <h4>PREMIUM PLAN</h4>
+                            <p>$ <span>29.99</span> monthly</p>
+                            <ul>
+                                <li>10 projects</li>
+                                <li>15 gb storage</li>
+                                <li>unlimited users</li>
+                                <li>20 gb bandwith</li>
+                                <li>enchanded security</li>
+                            </ul>
+                            <button>SIGN UP NOW</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="prices-card">
+                            <h4 class="prices-star"> <span><i class="fa fa-star" aria-hidden="true"></i></span>ADVANCED
+                                PLAN <span><i class="fa fa-star" aria-hidden="true"></i></span></h4>
+                            <p>$ <span>49.99</span> monthly</p>
+                            <ul>
+                                <li>15 projects</li>
+                                <li>30 gb storage</li>
+                                <li>unlimited users</li>
+                                <li>50 gb bandwidth</li>
+                                <li>enchanded security</li>
+                            </ul>
+                            <button>SIGN UP NOW</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="prices-card">
+                            <h4>ULTIMATE PLAN</h4>
+                            <p>$ <span>99.99</span> monthly</p>
+                            <ul>
+                                <li>unlimited projects</li>
+                                <li>unlimited storage</li>
+                                <li>unlimited users</li>
+                                <li>unlimited bandwidth</li>
+                                <li>enchanded security</li>
+                            </ul>
+                            <button>SIGN UP NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="purchase-it-second">
+                <div class="container">
+                    <div class="row justify-content-between pcontainer">
+                        <div class="col-6">
+                            <h3>UNIQUE! We Do <span><i class="fa fa-heart" aria-hidden="true"></i></span> It And Hope
+                                You Too</h3>
+                        </div>
+                        <div class="col-3">
+                            <button>PURCHASE IT NOW <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="social-map-form">
+        <div class="social-block">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-vk" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-viadeo" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-figma" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social-map">
+            <div id="map"></div>
+            <div class="forms">
+                <div class="forms-aria">
+                    <div class="forms-row">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="forms-row">
+                        <input type="text" placeholder="Email Address">
+                    </div>
+                    <div class="forms-row">
+                        <textarea type="text" placeholder="Message" maxlength="300"></textarea>
+                    </div>
+                    <button>SUBMIT MESSAGE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href=""><span><i class="fas fa-sort-up"></i></span></a>
+        <p>Copyright &copy; 2019 Unique, All Right Reserved.</p>
+    </footer>
 
 </body>
 
