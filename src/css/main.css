@@ -1021,14 +1021,6 @@ nav.fixed {
   margin-bottom: 70px;
   opacity: 0.8;
 }
-.members-section .flex-card-right {
-  display: flex;
-  justify-content: right;
-}
-.members-section .flex-card-left {
-  display: flex;
-  justify-content: left;
-}
 .members-section .members-card {
   width: 270px;
   border: 1px solid #d9d9d9;
@@ -1835,11 +1827,6 @@ span::after {
     font-size: 11px;
   }
 
-  .members-section .flex-card-right,
-.flex-card-left {
-    margin: 0 145px;
-  }
-
   .small-cards {
     margin: 0 100px;
   }
@@ -1967,10 +1954,6 @@ span::after {
     display: none;
   }
 
-  .members-section .flex-card-left {
-    justify-content: right;
-  }
-
   .small-cards {
     margin: 0 10px;
   }
@@ -2022,6 +2005,11 @@ span::after {
 
 .clicked-menu {
   color: #00adb5;
+}
+
+.flex-card {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
