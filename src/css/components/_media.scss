@@ -1,0 +1,567 @@
+@media screen and (max-width: 1920px) {}
+
+
+/* 1369 - 1600 px */
+@media screen and (max-width: 1600px) {}
+
+/* 961 - 1368 px */
+@media screen and (max-width: 1368px) {
+    nav {
+        ul {
+
+            display: none;
+            padding: 0;
+
+            li {
+                display: block !important;
+                text-align: right;
+                margin: 20px auto;
+
+                a {
+                    font-size: 20px !important;
+                    border-bottom: 1px solid $mainColor;
+
+                    &:hover {
+                        background: none !important;
+                        border-radius: 0 !important;
+                        color: $textColor !important;
+
+                    }
+                }
+            }
+        }
+
+        .menu-trigger {
+            display: block;
+            cursor: pointer;
+            font-size: 20px;
+
+
+        }
+    }
+
+    .offers {
+        .offers-header {
+            h2::after {
+                left: 10%;
+            }
+
+            h2::before {
+                right: 10%;
+            }
+
+            h2 span::after {
+                right: 7%;
+            }
+
+            h2 span::before {
+                left: 7%;
+            }
+        }
+
+        .services {
+            .services-item h3 {
+                text-align: center;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .features {
+
+        .features-header {
+            h2::before {
+                right: 10%;
+            }
+
+            h2::after {
+                left: 10%;
+            }
+
+            h2 span::after {
+                left: 8%;
+            }
+
+            h2 span::before {
+                right: 8%;
+            }
+        }
+
+        .features-items .item {
+            i {
+                top: 0;
+                left: -10px;
+            }
+
+            p {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .about-us {
+        padding-bottom: 90px;
+
+        .about-us-item {
+            width: inherit;
+
+            span {
+                margin-bottom: 0;
+
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .skills .skills-title h2 {
+        span::before {
+            left: -2%;
+        }
+
+        span::after {
+            right: -2%;
+        }
+
+        &::after {
+            left: 0;
+
+        }
+
+        &::before {
+            right: 0;
+        }
+    }
+
+    .works .works-header h2 {
+        &::after {
+            left: 87%;
+        }
+
+        &::before {
+            left: 14%;
+        }
+
+        span::after {
+            right: 12%;
+        }
+
+        span::before {
+            left: 12%;
+        }
+    }
+
+    .company-facts .facts-title {
+        h2 {
+            &::before {
+                right: 0;
+            }
+
+            &::after {
+                left: 0;
+            }
+
+            span::after {
+                right: 2%;
+            }
+
+            span::before {
+                left: -2%;
+            }
+        }
+    }
+
+    .company-facts .facts-item {
+
+        span::before,
+        span::after {
+            content: none;
+        }
+    }
+
+    .purchase-it-now {
+        height: 100%;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .members-section {
+        .members-title {
+            h2 {
+                &::before {
+                    right: 10%;
+                }
+
+                &::after {
+                    left: 10%;
+                }
+
+                span::after {
+                    right: 8%;
+                }
+
+                span::before {
+                    left: 8%;
+                }
+            }
+
+        }
+    }
+
+    .members-card {
+        margin-bottom: 10px;
+    }
+
+    .prices {
+        .prices-card {
+            margin-bottom: 50px;
+            margin-top: 0;
+        }
+
+        .prices-header {
+            h2 {
+                &::after {
+                    left: 0;
+                }
+
+                &::before {
+                    right: 0;
+                }
+
+                span {
+                    &::after {
+                        left: -2%;
+                    }
+
+                    &::before {
+                        left: 98%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 769 - 960 px */
+@media screen and (max-width: 960px) {
+    .header-block {
+        p {
+            color: $textWhite;
+        }
+
+        .black-frame {
+            margin: 0 auto;
+        }
+    }
+
+    .logos-section .owl-carousel-logos .owl-nav .owl-prev {
+        left: calc(49% - 40px);
+        top: 90%;
+    }
+
+    .logos-section .owl-carousel-logos .owl-nav .owl-next {
+        right: calc(49% - 40px);
+        top: 90%;
+    }
+
+    .social-block a i {
+        margin: 5px;
+    }
+}
+
+/* 481 - 768 px */
+@media screen and (max-width: 768px) {
+
+    h2::before,
+    h2::after,
+    span::before,
+    span::after {
+        content: none !important;
+    }
+
+    .offers {
+        padding-top: 100px;
+
+        .services .services-item {
+            i {
+                height: 80px;
+                width: 80px;
+                line-height: 80px;
+            }
+
+            h3 {
+                font-size: 17px;
+
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .features .features-items .item {
+        margin-left: 20px;
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            width: 230px;
+        }
+
+        i {
+            left: 138px;
+        }
+    }
+
+    .about-us .about-us-item {
+        padding-left: 0;
+        margin-top: 131px;
+
+        .about-us-icon {
+            left: 35px;
+            top: -64px;
+        }
+    }
+
+    .sub-name {
+        font-size: 10px;
+        padding: 0px 10px 70px 0;
+    }
+
+    .company-facts .facts-item {
+        p {
+            font-size: 12px;
+        }
+
+        span {
+            font-size: 55px;
+        }
+    }
+
+    .purchase-it-now {
+        a {
+            padding: 6px;
+        }
+
+        p {
+            font-size: 11px;
+        }
+    }
+
+    .members-section .flex-card-right,
+    .flex-card-left {
+        margin: 0 145px;
+    }
+
+    .small-cards {
+        margin: 0 100px;
+    }
+
+    .pcontainer {
+        justify-content: space-around !important;
+    }
+
+    .prices .purchase-it-second {
+        h3 {
+
+            font-size: 22px;
+
+        }
+
+        button {
+            width: 100px;
+            height: 54px;
+        }
+    }
+
+}
+
+/* 320 - 480 px */
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 20px !important;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .header-block {
+        margin-top: 70px;
+        height: 270px;
+
+        span {
+            font-size: 23px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .black-frame {
+            width: 306px;
+            font-size: 9px;
+
+            .logo {
+                font-size: 18px;
+            }
+        }
+
+        p {
+            font-size: 42px;
+        }
+
+    }
+
+    .offers {
+        padding-top: 111px;
+
+        .offers-header {
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .services .services-item {
+            height: 280px;
+
+            h3 {
+                font-size: 13px;
+            }
+
+            i {
+                height: 60px;
+                width: 60px;
+                line-height: 60px;
+                font-size: 28px;
+
+            }
+
+            p {
+                font-size: 11px;
+            }
+        }
+    }
+
+    .features {
+        .features-header {
+            p {
+                font-size: 13px;
+            }
+        }
+
+        .features-items .item {
+            p {
+                width: 179px;
+                text-align: left;
+            }
+
+            i {
+                left: 124px;
+            }
+
+            h3 {
+                color: #eeeeee;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .about-us .about-us-item {
+        padding-left: 0;
+        margin-top: 136px;
+
+        h3 {
+            font-size: 11px;
+        }
+
+        span {
+            font-size: 10px;
+        }
+
+        p {
+            font-size: 11px;
+        }
+
+        .about-us-icon {
+            left: 13px;
+        }
+    }
+
+    .skills,
+    .skill-logo {
+        display: none;
+    }
+
+    .works {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+        .works-header {
+            padding-top: 50px;
+        }
+    }
+
+    .company-facts .facts-item {
+        i {
+            font-size: 25px;
+        }
+
+        span {
+            font-size: 40px;
+        }
+    }
+
+    .purchase-it-now {
+        display: none;
+    }
+
+    .members-section .flex-card-left {
+        justify-content: right;
+    }
+
+    .small-cards {
+        margin: 0 10px;
+    }
+
+    .pcontainer {
+        justify-content: center !important;
+
+        h3 {
+            font-size: 19px;
+        }
+    }
+
+    .social-block .container .col-12 {
+        text-align: center;
+    }
+
+    .social-map .forms {
+        width: 320px;
+        left: 2%;
+
+        .forms-aria {
+            button{
+                width: 290px;
+            }
+            .forms-row {
+                width: 290px;
+
+                input,
+                textarea {
+                    width: 290px;
+                }
+            }
+        }
+    }
+}

@@ -16,3 +16,24 @@ $textWhite: #eeeeee;
 @import 'components/company';
 @import 'components/quotes';
 @import 'components/footer';
+@import 'components/media';
+.modals {
+    display: none;
+}
+
+.read-pop-up{
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+.menu-trigger{
+    display: none;
+    text-align: right;
+    padding-right: 15px;
+}
+.clicked-menu{
+    color:$mainColor;
+}

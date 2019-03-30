@@ -262,6 +262,7 @@ nav.fixed {
 
 .features {
   background: #222831;
+  overflow: hidden;
 }
 .features .features-header {
   margin-top: 77px;
@@ -305,7 +306,7 @@ nav.fixed {
   content: "";
   display: block;
   position: absolute;
-  right: 25%;
+  left: 25%;
   opacity: 0.5;
   top: calc(50% - 7px);
   height: 15px;
@@ -318,7 +319,7 @@ nav.fixed {
   content: "";
   display: block;
   position: absolute;
-  left: 25%;
+  right: 25%;
   opacity: 0.5;
   top: calc(50% - 7px);
   height: 15px;
@@ -401,14 +402,14 @@ nav.fixed {
   font-size: 14px;
 }
 .about-us .about-us-item .about-us-icon {
-  width: 40px;
+  width: 45px;
   min-height: 40px;
   border-radius: 5px;
   background: #222831;
-  position: relative;
+  position: absolute;
   display: block;
-  left: -60px;
-  top: -121px;
+  left: 0;
+  top: 0;
   text-align: center;
   line-height: 57px;
   transition: all 0.6s;
@@ -424,9 +425,9 @@ nav.fixed {
   left: 0px;
   width: 0;
   height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #222831;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-top: 19px solid #222831;
   transition: all 0.6s;
 }
 .about-us .about-us-item:hover .about-us-icon {
@@ -1020,6 +1021,14 @@ nav.fixed {
   margin-bottom: 70px;
   opacity: 0.8;
 }
+.members-section .flex-card-right {
+  display: flex;
+  justify-content: right;
+}
+.members-section .flex-card-left {
+  display: flex;
+  justify-content: left;
+}
 .members-section .members-card {
   width: 270px;
   border: 1px solid #d9d9d9;
@@ -1444,7 +1453,6 @@ nav.fixed {
   text-decoration: none;
 }
 .social-block a i {
-  margin: 0 auto;
   height: 45px;
   width: 45px;
   border: 1px solid #eeeeee;
@@ -1545,12 +1553,12 @@ footer {
   justify-content: center;
 }
 footer span {
-  height: 55px;
-  width: 55px;
+  height: 35px;
+  width: 35px;
   display: block;
   position: absolute;
-  top: -28px;
-  left: calc(50% - 27px);
+  top: -12px;
+  left: calc(50% - 17.5px);
   border-radius: 5px;
   background: #00adb5;
   text-align: center;
@@ -1558,9 +1566,9 @@ footer span {
 }
 footer span i {
   color: #eeeeee;
-  font-size: 35px;
+  font-size: 25px;
   transform: rotate(315deg);
-  line-height: 55px !important;
+  line-height: 35px !important;
 }
 footer p {
   color: #eeeeee;
@@ -1575,6 +1583,445 @@ footer p {
 
 .ct-series-b .ct-slice-donut-solid {
   fill: #00adb5 !important;
+}
+
+/* 1369 - 1600 px */
+/* 961 - 1368 px */
+@media screen and (max-width: 1368px) {
+  nav ul {
+    display: none;
+    padding: 0;
+  }
+  nav ul li {
+    display: block !important;
+    text-align: right;
+    margin: 20px auto;
+  }
+  nav ul li a {
+    font-size: 20px !important;
+    border-bottom: 1px solid #00adb5;
+  }
+  nav ul li a:hover {
+    background: none !important;
+    border-radius: 0 !important;
+    color: #222831 !important;
+  }
+  nav .menu-trigger {
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .offers .offers-header h2::after {
+    left: 10%;
+  }
+  .offers .offers-header h2::before {
+    right: 10%;
+  }
+  .offers .offers-header h2 span::after {
+    right: 7%;
+  }
+  .offers .offers-header h2 span::before {
+    left: 7%;
+  }
+  .offers .services .services-item h3 {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .features .features-header h2::before {
+    right: 10%;
+  }
+  .features .features-header h2::after {
+    left: 10%;
+  }
+  .features .features-header h2 span::after {
+    left: 8%;
+  }
+  .features .features-header h2 span::before {
+    right: 8%;
+  }
+  .features .features-items .item i {
+    top: 0;
+    left: -10px;
+  }
+  .features .features-items .item p {
+    margin-left: 0;
+  }
+
+  .about-us {
+    padding-bottom: 90px;
+  }
+  .about-us .about-us-item {
+    width: inherit;
+  }
+  .about-us .about-us-item span {
+    margin-bottom: 0;
+  }
+  .about-us .about-us-item p {
+    font-size: 13px;
+  }
+
+  .skills .skills-title h2 span::before {
+    left: -2%;
+  }
+  .skills .skills-title h2 span::after {
+    right: -2%;
+  }
+  .skills .skills-title h2::after {
+    left: 0;
+  }
+  .skills .skills-title h2::before {
+    right: 0;
+  }
+
+  .works .works-header h2::after {
+    left: 87%;
+  }
+  .works .works-header h2::before {
+    left: 14%;
+  }
+  .works .works-header h2 span::after {
+    right: 12%;
+  }
+  .works .works-header h2 span::before {
+    left: 12%;
+  }
+
+  .company-facts .facts-title h2::before {
+    right: 0;
+  }
+  .company-facts .facts-title h2::after {
+    left: 0;
+  }
+  .company-facts .facts-title h2 span::after {
+    right: 2%;
+  }
+  .company-facts .facts-title h2 span::before {
+    left: -2%;
+  }
+
+  .company-facts .facts-item span::before,
+.company-facts .facts-item span::after {
+    content: none;
+  }
+
+  .purchase-it-now {
+    height: 100%;
+  }
+  .purchase-it-now p {
+    text-align: center;
+  }
+
+  .members-section .members-title h2::before {
+    right: 10%;
+  }
+  .members-section .members-title h2::after {
+    left: 10%;
+  }
+  .members-section .members-title h2 span::after {
+    right: 8%;
+  }
+  .members-section .members-title h2 span::before {
+    left: 8%;
+  }
+
+  .members-card {
+    margin-bottom: 10px;
+  }
+
+  .prices .prices-card {
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+  .prices .prices-header h2::after {
+    left: 0;
+  }
+  .prices .prices-header h2::before {
+    right: 0;
+  }
+  .prices .prices-header h2 span::after {
+    left: -2%;
+  }
+  .prices .prices-header h2 span::before {
+    left: 98%;
+  }
+}
+/* 769 - 960 px */
+@media screen and (max-width: 960px) {
+  .header-block p {
+    color: #eeeeee;
+  }
+  .header-block .black-frame {
+    margin: 0 auto;
+  }
+
+  .logos-section .owl-carousel-logos .owl-nav .owl-prev {
+    left: calc(49% - 40px);
+    top: 90%;
+  }
+
+  .logos-section .owl-carousel-logos .owl-nav .owl-next {
+    right: calc(49% - 40px);
+    top: 90%;
+  }
+
+  .social-block a i {
+    margin: 5px;
+  }
+}
+/* 481 - 768 px */
+@media screen and (max-width: 768px) {
+  h2::before,
+h2::after,
+span::before,
+span::after {
+    content: none !important;
+  }
+
+  .offers {
+    padding-top: 100px;
+  }
+  .offers .services .services-item i {
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+  }
+  .offers .services .services-item h3 {
+    font-size: 17px;
+  }
+  .offers .services .services-item p {
+    font-size: 12px;
+  }
+
+  .features .features-items .item {
+    margin-left: 20px;
+  }
+  .features .features-items .item h3 {
+    margin-bottom: 10px;
+  }
+  .features .features-items .item p {
+    width: 230px;
+  }
+  .features .features-items .item i {
+    left: 138px;
+  }
+
+  .about-us .about-us-item {
+    padding-left: 0;
+    margin-top: 131px;
+  }
+  .about-us .about-us-item .about-us-icon {
+    left: 35px;
+    top: -64px;
+  }
+
+  .sub-name {
+    font-size: 10px;
+    padding: 0px 10px 70px 0;
+  }
+
+  .company-facts .facts-item p {
+    font-size: 12px;
+  }
+  .company-facts .facts-item span {
+    font-size: 55px;
+  }
+
+  .purchase-it-now a {
+    padding: 6px;
+  }
+  .purchase-it-now p {
+    font-size: 11px;
+  }
+
+  .members-section .flex-card-right,
+.flex-card-left {
+    margin: 0 145px;
+  }
+
+  .small-cards {
+    margin: 0 100px;
+  }
+
+  .pcontainer {
+    justify-content: space-around !important;
+  }
+
+  .prices .purchase-it-second h3 {
+    font-size: 22px;
+  }
+  .prices .purchase-it-second button {
+    width: 100px;
+    height: 54px;
+  }
+}
+/* 320 - 480 px */
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 20px !important;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .header-block {
+    margin-top: 70px;
+    height: 270px;
+  }
+  .header-block span {
+    font-size: 23px;
+  }
+  .header-block h1 {
+    font-size: 24px;
+  }
+  .header-block .black-frame {
+    width: 306px;
+    font-size: 9px;
+  }
+  .header-block .black-frame .logo {
+    font-size: 18px;
+  }
+  .header-block p {
+    font-size: 42px;
+  }
+
+  .offers {
+    padding-top: 111px;
+  }
+  .offers .offers-header h2 {
+    font-size: 20px;
+  }
+  .offers .offers-header p {
+    font-size: 12px;
+  }
+  .offers .services .services-item {
+    height: 280px;
+  }
+  .offers .services .services-item h3 {
+    font-size: 13px;
+  }
+  .offers .services .services-item i {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    font-size: 28px;
+  }
+  .offers .services .services-item p {
+    font-size: 11px;
+  }
+
+  .features .features-header p {
+    font-size: 13px;
+  }
+  .features .features-items .item p {
+    width: 179px;
+    text-align: left;
+  }
+  .features .features-items .item i {
+    left: 124px;
+  }
+  .features .features-items .item h3 {
+    color: #eeeeee;
+    font-size: 12px;
+  }
+
+  .about-us .about-us-item {
+    padding-left: 0;
+    margin-top: 136px;
+  }
+  .about-us .about-us-item h3 {
+    font-size: 11px;
+  }
+  .about-us .about-us-item span {
+    font-size: 10px;
+  }
+  .about-us .about-us-item p {
+    font-size: 11px;
+  }
+  .about-us .about-us-item .about-us-icon {
+    left: 13px;
+  }
+
+  .skills,
+.skill-logo {
+    display: none;
+  }
+
+  .works {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .works .works-header {
+    padding-top: 50px;
+  }
+
+  .company-facts .facts-item i {
+    font-size: 25px;
+  }
+  .company-facts .facts-item span {
+    font-size: 40px;
+  }
+
+  .purchase-it-now {
+    display: none;
+  }
+
+  .members-section .flex-card-left {
+    justify-content: right;
+  }
+
+  .small-cards {
+    margin: 0 10px;
+  }
+
+  .pcontainer {
+    justify-content: center !important;
+  }
+  .pcontainer h3 {
+    font-size: 19px;
+  }
+
+  .social-block .container .col-12 {
+    text-align: center;
+  }
+
+  .social-map .forms {
+    width: 320px;
+    left: 2%;
+  }
+  .social-map .forms .forms-aria button {
+    width: 290px;
+  }
+  .social-map .forms .forms-aria .forms-row {
+    width: 290px;
+  }
+  .social-map .forms .forms-aria .forms-row input,
+.social-map .forms .forms-aria .forms-row textarea {
+    width: 290px;
+  }
+}
+.modals {
+  display: none;
+}
+
+.read-pop-up {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.menu-trigger {
+  display: none;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.clicked-menu {
+  color: #00adb5;
 }
 
 /*# sourceMappingURL=main.css.map */

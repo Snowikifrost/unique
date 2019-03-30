@@ -6,7 +6,6 @@
         text-decoration: none;
 
         i {
-            margin: 0 auto;
             height: 45px;
             width: 45px;
             border: 1px solid $textWhite;
@@ -120,21 +119,21 @@ footer {
     align-items: center;
     justify-content: center;
     span {
-        height: 55px;
-        width: 55px;
+        height: 35px;
+        width: 35px;
         display: block;
         position: absolute;
-        top: -28px;
-        left: calc(50% - 27px);
+        top: -12px;
+        left: calc(50% - 17.5px);
         border-radius: 5px;
         background: $mainColor;
         text-align: center;
         transform: rotate(45deg);
         i {
             color: $textWhite;
-            font-size: 35px;
+            font-size: 25px;
             transform: rotate(315deg);
-            line-height: 55px!important;
+            line-height: 35px!important;
         }
     }
 
