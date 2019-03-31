@@ -1,6 +1,20 @@
 (function ($) {
   $(document).ready(function () {
 
+    if($(window).width() < 758){
+      $('.one-works-container').on('click',function(){
+        $(this).find('.title-hover').hasClass('showed') ?  $(this).find('.title-hover').css({
+          opacity: 0
+        }).removeClass('showed') : $(this).find('.title-hover').css({
+          opacity:0.9
+        }).addClass('showed');
+        
+       
+       
+      });
+    }
+
+
     //Адаптивное меню
     $('.menu-trigger').click(function(){
       $('nav ul').slideToggle(500);
