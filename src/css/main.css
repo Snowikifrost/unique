@@ -1580,30 +1580,6 @@ footer p {
 /* 1369 - 1600 px */
 /* 961 - 1368 px */
 @media screen and (max-width: 1368px) {
-  nav ul {
-    display: none;
-    padding: 0;
-  }
-  nav ul li {
-    display: block !important;
-    text-align: right;
-    margin: 20px auto;
-  }
-  nav ul li a {
-    font-size: 20px !important;
-    border-bottom: 1px solid #00adb5;
-  }
-  nav ul li a:hover {
-    background: none !important;
-    border-radius: 0 !important;
-    color: #222831 !important;
-  }
-  nav .menu-trigger {
-    display: block;
-    cursor: pointer;
-    font-size: 20px;
-  }
-
   .offers .offers-header h2::after {
     left: 10%;
   }
@@ -1737,6 +1713,31 @@ footer p {
   }
   .prices .prices-header h2 span::before {
     left: 98%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  nav ul {
+    display: none;
+    padding: 0;
+  }
+  nav ul li {
+    display: block !important;
+    text-align: right;
+    margin: 20px auto;
+  }
+  nav ul li a {
+    font-size: 20px !important;
+    border-bottom: 1px solid #00adb5;
+  }
+  nav ul li a:hover {
+    background: none !important;
+    border-radius: 0 !important;
+    color: #222831 !important;
+  }
+  nav .menu-trigger {
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
   }
 }
 /* 769 - 960 px */
@@ -2010,6 +2011,19 @@ span::after {
 .flex-card {
   display: flex;
   justify-content: center;
+}
+
+.active-nav {
+  background: #00adb5;
+  border-radius: 5px;
+  color: #eeeeee !important;
+}
+
+@media screen and (max-width: 1368px) {
+  .active-nav {
+    background: transparent;
+    color: #00adb5 !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

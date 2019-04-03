@@ -1,5 +1,11 @@
 (function ($) {
   $(document).ready(function () {
+    new WOW().init();
+$('.logo').on('click',function(){
+  $('body,html').animate({
+    scrollTop:0
+  },600);
+});
 
     if($(window).width() < 758){
       $('.one-works-container').on('click',function(){
@@ -60,7 +66,8 @@
       $('html, body').animate({
         scrollTop: offtop + 'px'
       }, 900);
-    });
+    }); 
+
     //Яндекс Карты
     $.fn.MapsInit = function () {
 

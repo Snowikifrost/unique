@@ -42,3 +42,14 @@ $textWhite: #eeeeee;
     display: flex;
    justify-content: center;
 }
+.active-nav{
+    background: $mainColor;
+    border-radius: 5px;
+    color: $textWhite!important;
+}
+@media screen and (max-width: 1368px){
+    .active-nav{
+        background: transparent;
+        color: $mainColor!important;
+    }
+}
